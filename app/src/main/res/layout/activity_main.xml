@@ -51,9 +51,10 @@
         android:text="Aceptar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCarnet"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/txtLastName"
@@ -69,5 +70,36 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <Spinner
+        android:id="@+id/spinner_Departamentos"
+        android:layout_width="295dp"
+        android:layout_height="26dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/spinner_Departamentos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOk" />
+
+    <Spinner
+        android:id="@+id/spinner_carreras"
+        android:layout_width="290dp"
+        android:layout_height="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner_estado_civil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Departamentos" />
+
+    <Spinner
+        android:id="@+id/spinner_estado_civil"
+        android:layout_width="286dp"
+        android:layout_height="27dp"
+        android:layout_marginBottom="40dp"
+        android:entries="@array/spinner_estado_civil"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

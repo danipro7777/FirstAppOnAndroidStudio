@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">FirstAplication</string>
+    <string name="app_name">FirstApplication</string>
+    <string-array name="spinner_Departamentos">
+        <item>Guatemala</item>
+        <item>Sacatepequez</item>
+        <item>Quetzaltenango</item>
+    </string-array>
+    <string-array name="spinner_estado_civil">
+        <item>Soltero</item>
+        <item>Casado</item>
+        <item>Divorciado</item>
+    </string-array>
 </resources>
