@@ -9,11 +9,16 @@ class Activity2 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_2)
 
-        val textName: TextView = findViewById(R.id.textViewDatos)
+        val textViewName: TextView = findViewById(R.id.textViewName)
+        val textViewLastName: TextView = findViewById(R.id.textViewLastName)
+        val textViewCarnet: TextView = findViewById(R.id.textViewCarnet)
+
         val name = intent.getStringExtra("Name")
         val lastName = intent.getStringExtra("LastName")
         val carnet = intent.getStringExtra("Carnet")
 
-        textName.text = "Name: $name\nLast Name: $lastName\nCarnet: $carnet"
+        textViewName.text = "Name: $name"
+        textViewLastName.text = "Last Name: $lastName"
+        textViewCarnet.text = "Carnet: $carnet"
     }
 }
