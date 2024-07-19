@@ -96,7 +96,6 @@
         android:layout_width="286dp"
         android:layout_height="27dp"
         android:layout_marginBottom="40dp"
-        android:entries="@array/spinner_estado_civil"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"

@@ -5,9 +5,4 @@
         <item>Sacatepequez</item>
         <item>Quetzaltenango</item>
     </string-array>
-    <string-array name="spinner_estado_civil">
-        <item>Soltero</item>
-        <item>Casado</item>
-        <item>Divorciado</item>
-    </string-array>
 </resources>
