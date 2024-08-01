@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/whatsapp_image_2024_07_18_at_21_29_25_a54e3e63"
+    android:foregroundTint="#AF9D9D"
     tools:context=".MainActivity">
 
     <EditText
@@ -96,6 +97,7 @@
         android:layout_width="286dp"
         android:layout_height="27dp"
         android:layout_marginBottom="40dp"
+        android:backgroundTint="#E0D4D4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"

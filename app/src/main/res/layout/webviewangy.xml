@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#E8F5E9"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NAVEGADOR"
+        android:textSize="24sp"
+        android:textColor="#1B5E20"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/editTextURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese URL"
+        android:inputType="textUri"
+        android:backgroundTint="#388E3C"
+        android:textColor="#1B5E20"
+        android:hintTextColor="#A5D6A7"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/buttonOpenURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buscar"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#4CAF50"
+        android:layout_below="@id/editTextURL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/buttonOpenURL"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
