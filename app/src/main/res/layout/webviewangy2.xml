@@ -2,7 +2,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".WebViewA">
+    android:padding="16dp"
+    android:background="#E0F7FA"
+    tools:context=".WebViewSpinnerA">
 
     <TextView
         android:id="@+id/titleTextView"
@@ -10,21 +12,20 @@
         android:layout_height="wrap_content"
         android:text="NAVEGADOR"
         android:textSize="24sp"
-        android:textColor="#1B5E20"
+        android:textColor="#00796B"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="24dp"
+        android:textStyle="bold"/>
 
-    <EditText
-        android:id="@+id/editTextURL"
+    <Spinner
+        android:id="@+id/spinnerURL"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Ingrese URL"
-        android:inputType="textUri"
-        android:backgroundTint="#388E3C"
-        android:textColor="#1B5E20"
-        android:textColorHint="#A5D6A7"
         android:layout_below="@id/titleTextView"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#4DD0E1"
+        android:padding="8dp"
+        android:textColor="#00796B"/>
 
     <Button
         android:id="@+id/buttonOpenURL"
@@ -32,10 +33,12 @@
         android:layout_height="wrap_content"
         android:text="Buscar"
         android:textColor="#FFFFFF"
-        android:backgroundTint="#4CAF50"
-        android:layout_below="@id/editTextURL"
+        android:backgroundTint="#00ACC1"
+        android:layout_below="@id/spinnerURL"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:padding="8dp"
+        android:textStyle="bold"/>
 
     <WebView
         android:id="@+id/webView"

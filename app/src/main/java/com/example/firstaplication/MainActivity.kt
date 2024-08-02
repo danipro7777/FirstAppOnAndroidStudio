@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         val txtName: EditText = findViewById(R.id.txtName)
         val txtLastName: EditText = findViewById(R.id.txtLastName)
         val txtCarnet: EditText = findViewById(R.id.txtCarnet)
+        val buttonGoToWebView: Button = findViewById(R.id.buttonGoToWebView)
+        val buttonGoToWebViewSpinnerA: Button = findViewById(R.id.buttonGoToWebViewSpinnerA)
 
         btnOk.setOnClickListener {
             val name = txtName.text.toString()
@@ -43,7 +45,15 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        buttonGoToWebView.setOnClickListener {
+            val intent = Intent(this, WebViewA::class.java)
+            startActivity(intent)
+        }
 
+        buttonGoToWebViewSpinnerA.setOnClickListener {
+            val intent = Intent(this, WebViewSpinnerA::class.java)
+            startActivity(intent)
+        }
 
         // Inicializar los Spinners
         val spinnerCarreras: Spinner = findViewById(R.id.spinner_carreras)

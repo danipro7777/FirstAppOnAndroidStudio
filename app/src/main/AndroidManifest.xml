@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirstAplication"
         tools:targetApi="31">
+
+        <!-- Activity declarations -->
         <activity
             android:name=".Activity2"
             android:exported="false" />
@@ -20,10 +22,20 @@
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- WebViewA activity declaration -->
+        <activity
+            android:name=".WebViewA"
+            android:exported="false" />
+
+        <!-- Add WebViewSpinnerA activity here -->
+        <activity
+            android:name=".WebViewSpinnerA"
+            android:exported="false" />
     </application>
+
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
