@@ -26,6 +26,7 @@ class MainActivity : AppCompatActivity() {
         val txtCarnet: EditText = findViewById(R.id.txtCarnet)
         val buttonGoToWebView: Button = findViewById(R.id.buttonGoToWebView)
         val buttonGoToWebViewSpinnerA: Button = findViewById(R.id.buttonGoToWebViewSpinnerA)
+        val btnPablo1: Button = findViewById(R.id.btnPablo1)
 
         btnOk.setOnClickListener {
             val name = txtName.text.toString()
@@ -52,6 +53,11 @@ class MainActivity : AppCompatActivity() {
 
         buttonGoToWebViewSpinnerA.setOnClickListener {
             val intent = Intent(this, WebViewSpinnerA::class.java)
+            startActivity(intent)
+        }
+
+        btnPablo1.setOnClickListener {
+            val intent = Intent(this, WebViewPablo::class.java)
             startActivity(intent)
         }
 

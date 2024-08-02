@@ -31,6 +31,9 @@
             android:name=".WebViewA"
             android:exported="false" />
 
+        <activity android:name=".WebViewPablo"></activity>
+
+
         <!-- Add WebViewSpinnerA activity here -->
         <activity
             android:name=".WebViewSpinnerA"

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese URL"
+        android:inputType="textUri"
+        android:padding="8dp"
+        android:textColor="#000000"/>
+
+    <Button
+        android:id="@+id/buttonOpenURL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Abrir URL"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:textColor="#FFFFFF"
+        android:background="#4CAF50"/>
+
+    <WebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
