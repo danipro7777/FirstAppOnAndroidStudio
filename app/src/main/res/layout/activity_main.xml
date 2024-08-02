@@ -48,10 +48,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Aceptar"
-        app:layout_constraintBottom_toTopOf="@+id/spinner_Departamentos"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnPablo1" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/txtLastName"
@@ -70,39 +70,44 @@
         app:layout_constraintTop_toBottomOf="@+id/txtName"
         app:layout_constraintVertical_bias="0.146" />
 
+    <!-- Botón para navegar a la actividad del WebView (WebViewA) -->
+
+    <!-- Nuevo botón para navegar a la actividad del WebViewSpinnerA -->
+
     <Spinner
         android:id="@+id/spinner_Departamentos"
         android:layout_width="295dp"
         android:layout_height="26dp"
         android:entries="@array/spinner_Departamentos"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="552dp" />
+        app:layout_constraintTop_toBottomOf="@+id/btnOk"
+        app:layout_constraintVertical_bias="0.585" />
 
     <Spinner
         android:id="@+id/spinner_carreras"
         android:layout_width="290dp"
         android:layout_height="27dp"
-        app:layout_constraintBottom_toTopOf="@+id/spinner_estado_civil"
+        android:layout_marginTop="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner_Departamentos" />
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Departamentos"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Spinner
         android:id="@+id/spinner_estado_civil"
         android:layout_width="286dp"
         android:layout_height="27dp"
-        android:layout_marginBottom="40dp"
         android:backgroundTint="#E0D4D4"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <!-- Botón para navegar a la actividad del WebView (WebViewA) -->
-
-    <!-- Nuevo botón para navegar a la actividad del WebViewSpinnerA -->
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_carreras"
+        app:layout_constraintVertical_bias="0.316" />
 
     <Button
         android:id="@+id/buttonGoToWebView"
@@ -114,10 +119,10 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/spinner_Departamentos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintHorizontal_bias="0.119"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtCarnet"
-        app:layout_constraintVertical_bias="0.273" />
+        app:layout_constraintVertical_bias="0.558" />
 
     <Button
         android:id="@+id/buttonGoToWebViewSpinnerA"
@@ -129,10 +134,10 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/spinner_Departamentos"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.921"
         app:layout_constraintStart_toEndOf="@+id/buttonGoToWebView"
         app:layout_constraintTop_toBottomOf="@+id/txtCarnet"
-        app:layout_constraintVertical_bias="0.227" />
+        app:layout_constraintVertical_bias="0.508" />
 
     <Button
         android:id="@+id/btnPablo1"
@@ -145,6 +150,18 @@
         app:layout_constraintHorizontal_bias="0.184"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonGoToWebViewSpinnerA"
-        app:layout_constraintVertical_bias="0.192" />
+        app:layout_constraintVertical_bias="0.495" />
+
+    <Button
+        android:id="@+id/btnPablo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pablo 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.704"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.729" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
